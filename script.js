@@ -19,7 +19,6 @@
           }
       }
       window.showModal = function() {
-          alert(getPhoto());
           var modal = document.getElementById('myModal');
           modal.setAttribute('src',photo_post);
           modal.style.display = "block";
