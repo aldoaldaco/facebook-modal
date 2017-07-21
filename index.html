@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Facebook</title>
+    <link rel="shortcut icon" type="imgage/png" href="https://www.facebook.com/rsrc.php/yl/r/H3nktOa7ZMg.ico"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="awesome/css/font-awesome.css">
+  </head>
+  <body>
+    <!--<button id="myBtn" onclick="showModal"class="btnn">Open Modal</button>-->
+
+    <div class="header">
+        <div class="header-search">
+            <i style="color: #fff;" class="fa fa-facebook-official" aria-hidden="true"></i>
+            <input type="text" >
+            <button type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="session">
+            <button style="border-right: 1px solid #355089;">
+              <img src="http://via.placeholder.com/800x800" alt="">
+              <p>Aldo</p>
+            </button>
+            <button style="padding-left: 7px;">
+              <p>Inicio</p>
+            </button>
+        </div>
+        <div class="icons">
+            <i style="margin-right:7px;" class="fa fa-users" aria-hidden="true"></i>
+            <i style="margin-right:7px;" class="fa fa-comments" aria-hidden="true"></i>
+            <i style="margin-right:7px;border-right: 1px solid #355089;padding-right:15px;" class="fa fa-globe" aria-hidden="true"></i>
+            <i style="margin-right:10px;" class="fa fa-question-circle" aria-hidden="true"></i>
+            <i style="font-size: 12px;" aria-hidden="true">▼</i>
+        </div>
+    </div><br><br><br>
+    <div class="facebook">
+        <div class="info"><!--INFORMATION--></div>
+
+        <div class="posts">
+          <div class="posts-header">
+            <div class="header-publication">
+              <div class="element-publication"><i class="fa fa-pencil" aria-hidden="true"></i> Crear una publicación</div>
+              <div class="element-publication"><i style="float:left;" class="fa fa-picture-o" aria-hidden="true"></i><p style="padding-left:5px;color:#5471A8;float:left;">Album de fotos</p></div>
+              <div class="element-publication"><i style="float:left;" class="fa fa-video-camera" aria-hidden="true"></i><p style="padding-left:5px;color:#5471A8;float:left;">Video en vivo</p></div>
+            </div>
+            <div style="padding-top: 20px;" class="body-publication">
+              <img style="margin-left:13px;float:left;" src="http://via.placeholder.com/50x50" alt="profile">
+              <textarea id="textarea" style="border:none;width:86%;float:left;height:65px;resize: none;text-align:center;" name="name" rows="8" cols="80" placeholder="¿ Que estás pensando, Aldo ?"></textarea>
+            </div>
+            <div class="footer-publication">
+                <button><i style="color:#89BE49;margin-right:5px;" class="fa fa-picture-o" aria-hidden="true"></i> Foto/Video</button>
+                <button><i style="color:#F6C33A;margin-right:5px;" class="fa fa-smile-o" aria-hidden="true"></i> Sentimiento/Actividad</button>
+                <button>&bull;&nbsp;&bull;&nbsp;&bull;</button>
+            </div>
+          </div>
+          <div id="container-posts"></div>
+        </div>
+
+        <div class="public"><!--PUBLICITY--></div>
+        <div class="chat"><!--CHATS--></div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="close" class="close">&times;</span>
+            <div class="photo">
+                <img src="http://via.placeholder.com/800x800" alt="">
+            </div>
+            <div class="comments">
+                <div class="header-comments">
+                    <div class="a">
+                      <div id="profile-img">
+                        <img  src="http://via.placeholder.com/40x40" alt="">
+                      </div>
+                      <div id="page">
+                        <a  href="">Los ingenieros hacemos girar el mundo</a>
+                      </div>
+                    </div>
+                    <div class="b">
+                      <span class="b-data">Te gusta esta pagina</span> &bull;
+                      <span class="b-data">20 - Julio - 2017</span> &bull;
+                      <span class="b-data">Editado</span> &bull;
+                      <span class="b-data">O</span>
+                    </div>
+                </div>
+                <div class="info-comments">
+                    <a href="">Ing Aldo</a><br>
+                    <img src="https://www.facebook.com/images/emoji.php/v9/f9f/1/16/1f61b.png" alt=""> &mdash; con <a href="">Ing Aldo</a>
+                </div>
+                <div id="form" class="container-comments">
+                    <div class="like">
+
+                    </div>
+                    <div class="formComment">
+                      <input type="text" id="input" name="" onfocus="paintArray()"  onblur="clearPaint()" value="" placeholder="Escribe algo">
+                      <button type="button" id="boton" onclick="insertValue()"  name="Buscar">BUSCAR</button>
+                    </div>
+                </div>
+                <ul id="dropdown" class="list"></ul>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
